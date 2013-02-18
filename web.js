@@ -1,8 +1,8 @@
-var http = require('http');
 var fs = require('fs');
 var path = require('path');
 var port = process.env.PORT || 8081; 
-http.createServer(function (request, response) {
+var connect = require('connect');
+connect.createServer(function (request, response) {
  
     console.log(request.url)
      
