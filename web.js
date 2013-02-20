@@ -3,7 +3,7 @@ var path = require('path');
 var port = process.env.PORT || 8081; 
 var connect = require('connect');
 connect.createServer(
-    connect.logger('tiny'),
+    connect.logger('dev'),
     connect.favicon('public/favicon.ico'),
     connect.static(__dirname + '/public')
 ).listen(port);
