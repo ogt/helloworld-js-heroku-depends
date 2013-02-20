@@ -1,5 +1,3 @@
-var fs = require('fs');
-var path = require('path');
 var port = process.env.PORT || 8081; 
 var connect = require('connect');
 connect.createServer(
